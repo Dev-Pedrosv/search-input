@@ -53,7 +53,7 @@ function App() {
 
   const filterSearch = () => {
     const newList = list.filter((value) =>
-      value.language.toLowerCase().includes(filter)
+      value.language.toLowerCase().includes(filter.toLowerCase())
     );
     setFilterList(newList);
   };
